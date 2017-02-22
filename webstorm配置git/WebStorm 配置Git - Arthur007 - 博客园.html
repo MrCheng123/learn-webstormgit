@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://www.cnblogs.com/ArthurXml/p/6384076.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebStorm 配置Git - Arthur007 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./WebStorm 配置Git - Arthur007 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./WebStorm 配置Git - Arthur007 - 博客园_files/bundle-BlueSky.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="./WebStorm 配置Git - Arthur007 - 博客园_files/bundle-BlueSky-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/ArthurXml/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/ArthurXml/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/ArthurXml/wlwmanifest.xml">
+<script src="./WebStorm 配置Git - Arthur007 - 博客园_files/jquery.js.下载" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'ArthurXml', cb_enable_mathjax=false;var isLogined=true;</script>
+<script src="./WebStorm 配置Git - Arthur007 - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/ArthurXml/"><img id="blogLogo" src="./WebStorm 配置Git - Arthur007 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/ArthurXml/">Arthur007</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/ArthurXml/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/Arthur007">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/ArthurXml/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/ArthurXml/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 11&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 0</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/ArthurXml/p/6384076.html">WebStorm 配置Git</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><h1 class="title">&nbsp;</h1>
+<div class="show-content">
+<p>找了很多方法，这个是目前最好用的</p>
+<p>&nbsp;</p>
+<p>用webstorm上传代码时，首先要先下载git，网址一搜就可以搜到，然后开始配置webstorm，打开webstorm，在file-settings中直接搜索github，然后输入自己github的账号密码，</p>
+<div class="image-package"><iframe id="iframe_0.09103533725719637" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource.html" style="border: none; width: 701px; height: 220px;" frameborder="0" scrolling="no"></iframe></div>
+<p>点击test，之后就会出来了 connection successful的提示框，说明已经可以连接到你的github账户了。</p>
+<p>连接成功之后还需要连接下载的git，还是直接在settings中查找git，将git的安装路径输入，点击text，成功之后也会出来个connection successful的提示框，一般只要是看到successful就是没有什么问题了。只要不是提示什么fail啊，error的就继续往下一步吧！</p>
+<div class="image-package"><iframe id="iframe_0.7596846740740504" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(1).html" style="border: none; width: 701px; height: 221px;" frameborder="0" scrolling="no"></iframe></div>
+<p>之后需要获取本地的ssh，复制到github账户中的ssh中，SSH的作用是让本地版本库与远程版本库通信，也就是你在本地修改好的代码，需要同步到服务器上的时候，就需要这个SSH密钥来通讯。首先获取本地git ssh，打开git bash，输入ssh-keygen -t rsa -C “你的邮箱”，我输入的时候发现没办法复制只能一个一个的敲上去了，记住输入完之后需要按三次回车，才能出现c:\users(用户)\xxx（用户名）\.ssh的文件，打开找到id_rsa.pub的文件，可以用记事本打开</p>
+<div class="image-package"><iframe id="iframe_0.5531095369961441" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(2).html" style="border: none; width: 610px; height: 64px;" frameborder="0" scrolling="no"></iframe></div>
+<p>like this：</p>
+<div class="image-package"><iframe id="iframe_0.11833015599110275" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(3).html" style="border: none; width: 363px; height: 182px;" frameborder="0" scrolling="no"></iframe></div>
+<p>然后复制里面的内容，打开自己的github账户，找到settings-ssh and GPGkey，打开之后点击右上角new ssh key，将复制的ssh粘贴即可。</p>
+<div class="image-package"><iframe id="iframe_0.4552408258424778" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(4).html" style="border: none; width: 701px; height: 245px;" frameborder="0" scrolling="no"></iframe></div>
+<p>准备工作做好之后就可以上传代码啦，打开webstorm，如图</p>
+<div class="image-package"><iframe id="iframe_0.6900032007091239" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(5).html" style="border: none; width: 701px; height: 373px;" frameborder="0" scrolling="no"></iframe></div>
+<p>点击之后会弹出来这样的页面</p>
+<div class="image-package"><iframe id="iframe_0.6909672585545708" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(6).html" style="border: none; width: 480px; height: 264px;" frameborder="0" scrolling="no"></iframe></div>
+<p>将你想要上传的代码选择github中的一个文件夹，写好自己的github地址，在本地文件中选择好上传代码的路径，在这里需要注意的是，如果你要上传文件的目录中，已经存在了同名目录，比如f：\task，这样的话是不能拷贝到github中的，如果有冲突的话直接换个文件夹的路径就好了。</p>
+<p>点击想要上传的代码或者是文件，</p>
+<div class="image-package"><iframe id="iframe_0.6675095209906465" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(7).html" style="border: none; width: 677px; height: 550px;" frameborder="0" scrolling="no"></iframe></div>
+<p>add之后会发现原来红色的文件名变为了蓝色（(⊙o⊙)或者是绿色没办法蓝绿不分啊 啊啊），</p>
+<div class="image-package"><iframe id="iframe_0.44308536233970197" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(8).html" style="border: none; width: 597px; height: 285px;" frameborder="0" scrolling="no"></iframe></div>
+<p>点击vcs中的commit changes，出来这个页面</p>
+<div class="image-package"><iframe id="iframe_0.144174261158182" src="./WebStorm 配置Git - Arthur007 - 博客园_files/saved_resource(9).html" style="border: none; width: 701px; height: 660px;" frameborder="0" scrolling="no"></iframe></div>
+<p>按照提示点击commit and push，去github主页上查看，代码就上传好啦~~~</p>
+<p>&nbsp;</p>
+<p>转载自 &nbsp;http://www.jianshu.com/p/752613f4b1c9 &nbsp; 仅供学习交流之用</p>
+</div></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/ArthurXml/tag/Webstoem/">Webstoem</a>, <a href="http://www.cnblogs.com/ArthurXml/tag/Git/">Git</a>, <a href="http://www.cnblogs.com/ArthurXml/tag/%E9%85%8D%E7%BD%AE/">配置</a>, <a href="http://www.cnblogs.com/ArthurXml/tag/GitHub/">GitHub</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(6384076,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;8102c431-3d6e-e411-b908-9dcfd8948a71&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./WebStorm 配置Git - Arthur007 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./WebStorm 配置Git - Arthur007 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/ArthurXml/" target="_blank"><img src="./WebStorm 配置Git - Arthur007 - 博客园_files/sample_face.gif" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/ArthurXml/">Arthur007</a><br>
+            <a href="http://home.cnblogs.com/u/ArthurXml/followees">关注 - 5</a><br>
+            <a href="http://home.cnblogs.com/u/ArthurXml/followers">粉丝 - 0</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;8102c431-3d6e-e411-b908-9dcfd8948a71&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(6384076,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+    <div class="buryit" onclick="votePost(6384076,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/ArthurXml/p/6101684.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/ArthurXml/p/6101684.html" title="发布于2016-11-25 15:11">MongoDB 副本集搭建</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2017-02-09 21:23</span> <a href="http://www.cnblogs.com/ArthurXml/">Arthur007</a> 阅读(<span id="post_view_count">47</span>) 评论(<span id="post_comment_count">0</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6384076" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/ArthurXml/p/6384076.html#" onclick="AddToWz(6384076);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=279512,cb_entryId=6384076,cb_blogApp=currentBlogApp,cb_blogUserGuid='8102c431-3d6e-e411-b908-9dcfd8948a71',cb_entryCreatedDate='2017/2/9 21:23:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/ArthurXml/p/6384076.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/ArthurXml/p/6384076.html#top">返回顶部</a></div>
+<div id="comment_form_container">
+<div id="commentform_title">发表评论</div>
+<span id="tip_comment" style="color:Red"></span>
+<p>
+昵称：<input type="text" id="tbCommentAuthor" class="author" disabled="disabled" size="50" value="MrCheng123">
+</p>
+<div class="commentbox_main">
+<div class="commentbox_title">
+<div class="commentbox_title_left">评论内容：</div>
+<div class="commentbox_title_right">
+<img id="ubb_quote" class="comment_icon" src="./WebStorm 配置Git - Arthur007 - 博客园_files/quote.gif" alt="引用" title="添加引用" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;quote&#39;)">
+<img id="ubb_bold" class="comment_icon" src="./WebStorm 配置Git - Arthur007 - 博客园_files/b.png" alt="粗体" title="添加粗体" onclick="insertUBB(&#39;tbCommentBody&#39;,&#39;b&#39;)">
+<img id="ubb_url" class="comment_icon" src="./WebStorm 配置Git - Arthur007 - 博客园_files/lk.png" alt="链接" title="添加链接" onclick="insertUbbUrl(&#39;tbCommentBody&#39;)">
+<img id="ubb_indent" class="comment_icon" src="./WebStorm 配置Git - Arthur007 - 博客园_files/indent.png" alt="缩进" title="添加首行缩进" onclick="insertIndent(&#39;tbCommentBody&#39;)">
+<img id="ubb_code" class="comment_icon" src="./WebStorm 配置Git - Arthur007 - 博客园_files/InsertCode.gif" alt="代码" title="添加代码" onclick="insertUbbCode()">
+<img id="ubb_img" class="comment_icon" src="./WebStorm 配置Git - Arthur007 - 博客园_files/img.gif" alt="图片" title="上传图片" onclick="OpenImageUploadWindow();">
+</div>
+</div>
+<div class="clear"></div>
+<textarea id="tbCommentBody" class="comment_textarea"></textarea>
+</div>
+<p id="commentbox_opt">
+<input id="btn_comment_submit" type="button" class="comment_btn" value="提交评论">
+<span id="span_comment_canceledit" style="display:none"><a href="javascript:void(0);" onclick="return CancelCommentEdit()">不改了</a></span>
+<a href="javascript:void(0);" onclick="return logout();">退出登录</a>
+        <a id="commentbox_opt_sub" href="javascript:void(0);" title="订阅后有新评论时会邮件通知您" onclick="commentManager.Subscribe()">订阅评论</a>
+</p>
+<div id="tip_comment2" style="color:Red"></div>
+<p>
+[Ctrl+Enter快捷键提交]
+</p>
+<div style="display:none">
+<span id="comment_edit_id"></span><span id="span_parentcomment_id"></span>
+<span id="span_parent_id"></span>
+<span id="span_comment_replyto"></span>
+<span id="span_comment_posted"></span>
+</div>
+</div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】50万行VC++源码: 大型组态工控、电力仿真CAD与GIS源码库</a><br><a href="http://click.aliyun.com/m/10467/" target="_blank">【直播】支付宝、微博、阿里云专家联合解读红包浪潮下的核心技术架构</a><br><a href="http://www.rongcloud.cn/" target="_blank">【推荐】融云即时通讯云－豆果美食、Faceu等亿级APP都在用</a><br><a href="http://cn.udacity.com/fend/?utm_source=cnblogs&amp;utm_medium=referral&amp;utm_campaign=newFEND" target="_blank">【推荐】Google+GitHub联手打造前端工程师课程</a><br><a href="https://group.cnblogs.com/topic/76017.html" target="_blank">【活动】一元专享1500元微软智能云Azure</a><br></div>
+<div id="opt_under_post"></div>
+<div id="ad_c1" class="c_ad_block"><a href="http://click.aliyun.com/m/10467/" target="_blank"><img width="300" height="250" src="./WebStorm 配置Git - Arthur007 - 博客园_files/24442-20170215141525175-203290624.jpg" alt=""></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/563445/" target="_blank">全球首个！京东低空无人机物流网络敲定：覆盖陕西全省</a><br> ·  <a href="http://news.cnblogs.com/n/563444/" target="_blank">万恶的奇葩验证码 还要从QQ挂太阳说起</a><br> ·  <a href="http://news.cnblogs.com/n/563443/" target="_blank">“无人机”可降解，这家公司在想什么？</a><br> ·  <a href="http://news.cnblogs.com/n/563442/" target="_blank">美团成立产业基金的猜想，赚吆喝还是当接盘侠?</a><br> ·  <a href="http://news.cnblogs.com/n/563441/" target="_blank">微软AirSim，一个无人机和机器人的模拟器</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="ad_c2" class="c_ad_block"><a href="http://bbs.h3bpm.com/index.php?m=app&amp;app=product_download&amp;a=reg&amp;utm_source=csdn&amp;utm_medium=pic&amp;utm_campaign=show&amp;utm_content=v10&amp;utm_term=%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD" target="_blank"><img width="468" height="60" src="./WebStorm 配置Git - Arthur007 - 博客园_files/24442-20170118152220281-363324784.jpg" alt=""></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/562830/" target="_blank">技术文章如何写作才能有较好的阅读体验</a><br> ·  <a href="http://kb.cnblogs.com/page/554260/" target="_blank">「代码家」的学习过程和学习经验分享</a><br> ·  <a href="http://kb.cnblogs.com/page/556770/" target="_blank">写给未来的程序媛</a><br> ·  <a href="http://kb.cnblogs.com/page/558087/" target="_blank">高质量的工程代码为什么难写</a><br> ·  <a href="http://kb.cnblogs.com/page/555750/" target="_blank">循序渐进地代码重构</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/ArthurXml/">Arthur007</a><br>园龄：<a href="http://home.cnblogs.com/u/ArthurXml/" title="入园时间：2014-11-17">2年3个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/ArthurXml/followers/">0</a><br>关注：<a href="http://home.cnblogs.com/u/ArthurXml/followees/">5</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;8102c431-3d6e-e411-b908-9dcfd8948a71&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="日历">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/01/01&#39;);return false;">&lt;</a></td><td align="center">2017年2月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/03/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td class="CalWeekendDay" align="center">4</td></tr><tr><td class="CalWeekendDay" align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center"><a href="http://www.cnblogs.com/ArthurXml/archive/2017/02/09.html"><u>9</u></a></td><td align="center">10</td><td class="CalWeekendDay" align="center">11</td></tr><tr><td class="CalWeekendDay" align="center">12</td><td align="center">13</td><td align="center">14</td><td align="center">15</td><td align="center">16</td><td align="center">17</td><td class="CalWeekendDay" align="center">18</td></tr><tr><td class="CalWeekendDay" align="center">19</td><td align="center">20</td><td align="center">21</td><td class="CalTodayDay" align="center">22</td><td align="center">23</td><td align="center">24</td><td class="CalWeekendDay" align="center">25</td></tr><tr><td class="CalWeekendDay" align="center">26</td><td align="center">27</td><td align="center">28</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td></tr><tr><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td><td class="CalOtherMonthDay" align="center">9</td><td class="CalOtherMonthDay" align="center">10</td><td class="CalOtherMonthDay" align="center">11</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/ArthurXml/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/ArthurXml/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/ArthurXml/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/ArthurXml/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/ArthurXml/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<div class="catListTag">
+<h3 class="catListTitle">我的标签</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/ArthurXml/tag/Git/">Git</a>(1)</li><li><a href="http://www.cnblogs.com/ArthurXml/tag/GitHub/">GitHub</a>(1)</li><li><a href="http://www.cnblogs.com/ArthurXml/tag/Webstoem/">Webstoem</a>(1)</li><li><a href="http://www.cnblogs.com/ArthurXml/tag/%E9%85%8D%E7%BD%AE/">配置</a>(1)</li>
+</ul>
+</div></div><div id="sidebar_categories">
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/ArthurXml/archive/2017/02.html">2017年2月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/ArthurXml/archive/2016/11.html">2016年11月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/ArthurXml/archive/2016/05.html">2016年5月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/ArthurXml/archive/2016/04.html">2016年4月 (8)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap" style="display: none;">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"></div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/ArthurXml/p/6384076.html">1. WebStorm 配置Git(46)</a></li><li><a href="http://www.cnblogs.com/ArthurXml/p/5391820.html">2. DOM增删改(27)</a></li><li><a href="http://www.cnblogs.com/ArthurXml/p/5427513.html">3. DOM-element 特性的读取总结(24)</a></li><li><a href="http://www.cnblogs.com/ArthurXml/p/5461845.html">4. 获取结算样式 getComputedStyle-currentStyle(18)</a></li><li><a href="http://www.cnblogs.com/ArthurXml/p/5409520.html">5. 关于类数组和字符串数组(15)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap" style="display: none;">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/ArthurXml/p/5387637.html">1. 选取文档元素的API(1)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2017 Arthur007
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>
